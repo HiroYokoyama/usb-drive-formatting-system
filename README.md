@@ -12,7 +12,7 @@ A headless, fully automated USB formatting system for Raspberry Pi. It detects U
 * Raspberry Pi (Tested on Raspberry Pi OS)
 * 1x Push Button (Momentary)
 * 1x LED (with built-in resistor, 3.3V compatible)
-* Female-to-Female Jumper Wires
+* Jumper Wires
 
 ## Wiring (GPIO)
 * **LED (+)**: GPIO 17 (Pin 11)
