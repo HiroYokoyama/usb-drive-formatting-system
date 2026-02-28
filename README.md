@@ -1,4 +1,4 @@
-# Raspberry Pi USB Auto Formatter
+# Raspberry Pi USB Drive Auto Formatter
 
 A headless, fully automated USB formatting system for Raspberry Pi. It detects USB insertion, waits for a hardware button hold, and automatically formats the drive to FAT32 while providing LED status feedback.
 
