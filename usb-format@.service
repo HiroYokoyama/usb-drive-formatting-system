@@ -1,0 +1,8 @@
+[Unit]
+Description=Format USB Device %I
+BindsTo=dev-%i.device
+After=dev-%i.device
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/format_usb.py %I
