@@ -2,7 +2,9 @@
 
 A headless, fully automated USB formatting system for Raspberry Pi. It detects USB insertion, waits for a hardware button hold, and automatically formats the drive to FAT32 while providing LED status feedback.
 
-![](img/system.jpeg)
+<p align="center">
+  <img src="./img/system.jpeg" alt="system image" width="400px">
+</p>
 
 ## Features
 * **Plug & Play Detection**: Uses `udev` to instantly detect USB insertion.
