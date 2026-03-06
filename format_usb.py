@@ -13,7 +13,7 @@ device = f"/dev/{sys.argv[1]}"
 
 # GPIO 17番ピンにLED、22番ピンにボタンを設定
 status_led = LED(17)
-button = Button(22, hold_time=3)
+button = Button(22, hold_time=2)
 
 # ---- 追加部分：強制終了(SIGTERM)を受け取った時の処理 ----
 def cleanup_and_exit(signum, frame):
@@ -27,7 +27,7 @@ signal.signal(signal.SIGTERM, cleanup_and_exit)
 # 1. 差し込んだら点灯（ボタン長押し待機状態）
 status_led.on()
 
-# 2. ボタンが3秒間長押しされるまでループして待機
+# 2. ボタンが長押しされるまでループして待機
 while not button.is_held:
     sleep(0.1)
 
